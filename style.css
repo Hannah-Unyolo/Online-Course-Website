@@ -5,7 +5,7 @@
   }
 .topnav {
     display: inline-flex;
-    gap: 40px;
+    gap: 30px;
     
     }
     .content{
@@ -40,7 +40,7 @@
       height: 40%;
     }
     #footer{
-      width: 100%;
+      width: 95%;
       display: flex;
       gap: 5%;
       background-color: antiquewhite;
