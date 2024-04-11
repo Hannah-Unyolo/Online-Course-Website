@@ -1,0 +1,95 @@
+#skillhero{
+    display: flex;
+    gap: 40%;
+    margin: 40px;
+  }
+.topnav {
+    display: inline-flex;
+    gap: 40px;
+    
+    }
+    .content{
+        display: flex;
+        padding-left: 3%;
+        gap: 10%;
+    }
+    .input{
+      border-radius: 12px;
+      height: 30px;
+      width: 70%;
+    }
+    #get{
+
+      border-radius: 12px;
+      background-color: red;
+      color: white;
+    }
+    #log{
+      border-radius: 12px;
+      border-color: red;
+      background-color: white;
+      color: red;
+      width: 30%;
+      height: 40%;
+    }
+    #join{
+      border-radius: 12px;
+      background-color: red;
+      color: white;
+      width: 40%;
+      height: 40%;
+    }
+    #footer{
+      width: 100%;
+      display: flex;
+      gap: 5%;
+      background-color: antiquewhite;
+      padding-left: 4%;
+    }
+    #tick{
+      display: flex;
+      gap: 10%;
+    }
+
+    @media screen and (min-width: 375px) and (max-width: 667px){
+      #skillhero{
+        display: flex;
+flex-wrap: wrap;
+      }
+
+    .topnav {
+        display:flex;
+        flex-wrap: wrap;
+        
+        }
+
+        .content{
+            display: flex;
+flex-wrap: wrap;
+        }
+
+        #footer{
+          display: flex;
+flex-wrap: wrap;
+        }
+
+        #tick{
+          display: flex;
+          flex-wrap: wrap;
+        } 
+        #log{
+          border-radius: 12px;
+          border-color: red;
+          background-color: white;
+          color: red;
+          width: 30%;
+          height: 20%;
+        }
+        #join{
+          border-radius: 12px;
+          background-color: red;
+          color: white;
+          width: 40%;
+          height: 20%;
+        }
+    }
