@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div id="wholepage">
         <div id="skillhero">
-            <h2> <img src="Images/wisdomhat.png">SKILL<b style="color: red;">HERO</b></h2>
+            <div id="hat">
+                <img src="Images/wisdomhat.png"><h2>SKILL<b id="active">HERO</b></h2>
+            </div>
+
             <div class="topnav">
-                <p style="color: red;">Home</p>
-                <p>Programs</p>
-                <p>About Us</p>
-                <p>Contact</p>
+                <a id="active">Home</a>
+                <a>Programs</a>
+                <a>About Us</a>
+                <a>Contact</a>
                 <button id="log">Login</button>
                 <button id="join">Join Now</button>
                 </div>
@@ -23,35 +26,45 @@
 
         <div class="content">
             <div>
-            <h1>Upgrade Your <br>
+            <h1 id="upgrade">Upgrade Your <br>
                 Skills Up To <br>
-            <b style="color: red;">Superhero</b> Level</h1>
+            <b id="active">Superhero</b> Level</h1>
             <br>
             <p>Don't let your strength be defeated,<br>
             Explore the hidden skills within you !</p>
             <br>
             <br>
-            <div class="button">
-                <input name="text" type="text" placeholder="What skills are you looking for" class="input"/> <button id="get">Explore Now</button> 
+            <div id="buttons">
+                <div class="button">
+                    <input name="text" type="text" placeholder="What skills are you looking for" class="input"/> 
+                </div>
+                <div>
+                    <button id="explore">Explore Now</button> 
+                </div>
             </div>
+<br>
+<br>
 <div id="tick">
-    <img src="Images/tick.png"> <p>Monthly Subscription</p>
-    <img src="Images/tick.png"> <p>30 day money back guarantee</p>
+    <img src="Images/tick.png" id="ticks"> <p>Monthly Subscription</p>
+    <img src="Images/tick.png" id="ticks"> <p>30 day money back guarantee</p>
 </div>
             </div>
             <br>
-            <div id="side">
-<img src="Images/aman.png">
+            <div>
+<img src="Images/aman.png" width="200%">
             </div>
     </div>
+</div>
 <br>
 <br>
-    <div id="footer">
-        <img src="Images/micro.jpeg" width="10%" height="20%">
-        <img src="Images/google.png" width="10%" height="20%">
-        <img src="Images/medium.png" width="10%" height="20%">
-        <img src="Images/udemy.png" width="10%" height="20%">
-        <img src="Images/slack.png" width="10%" height="20%">
+
+    <div id="logo">
+        <img src="Images/black microsoft.png" id="logos">
+        <img src="Images/blackgoogle.png" id="logos">
+        <img src="Images/bmedium.png" id="logos">
+        <img src="Images/udemyy.png" id="logos">
+        <img src="Images/blackslack.jpeg" id="logos">
     </div>
+
 </body>
 </html>

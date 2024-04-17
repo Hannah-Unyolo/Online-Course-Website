@@ -1,26 +1,38 @@
 #skillhero{
     display: flex;
-    gap: 40%;
+    gap: 25%;
     margin: 40px;
   }
 .topnav {
+  padding-top: 25px;
     display: inline-flex;
-    gap: 30px;
+    gap: 40px;
+    white-space: nowrap;
     
+    }
+    #active{
+      color: red;
     }
     .content{
         display: flex;
         padding-left: 3%;
-        gap: 10%;
+        gap: 1%;
+    }
+    #hat{
+      display: flex;
+      margin-top: 3px;
     }
     .input{
-      border-radius: 12px;
-      height: 30px;
+      border-radius: 20px;
+      height: 40px;
       width: 70%;
+    }
+    #wholepage{
+      margin-left: 10%;
     }
     #get{
 
-      border-radius: 12px;
+      border-radius: 20px;
       background-color: red;
       color: white;
     }
@@ -33,22 +45,58 @@
       height: 40%;
     }
     #join{
-      border-radius: 12px;
+      border-radius: 20px;
       background-color: red;
       color: white;
       width: 40%;
       height: 40%;
     }
-    #footer{
+    #logo{
       width: 95%;
       display: flex;
-      gap: 5%;
-      background-color: antiquewhite;
+      gap: 10%;
+      background-color: white;
       padding-left: 4%;
+    
     }
     #tick{
       display: flex;
-      gap: 10%;
+      gap:2%;
+      white-space: nowrap;
+    }
+
+    #ticks{
+      width: 40px;
+      height: 40px;
+    }
+
+    #logos{
+      width: 10%;
+      height: 10%;
+      text-align: center;
+    }
+    #buttons{
+      display: flex;
+    }
+    .button{
+      border-radius: 20px;
+      width: 100%;
+      height: 80px;
+      margin-right: -52%;
+    }
+    #explore{
+      border-radius: 20px;
+      background-color: red;
+      color: white;
+      height: 44px;
+    }
+    #man{
+      width: 100%;
+      padding-top: 12px;
+    }
+    #upgrade{
+      font-size: 60px;
+      font-style:initial;
     }
 
     @media screen and (min-width: 375px) and (max-width: 667px){
