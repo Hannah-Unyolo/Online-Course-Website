@@ -1,15 +1,44 @@
+.topnav {
+  overflow: hidden;
+  background-color:white;
+  position: relative;
+}
+
+.topnavh #myLinks {
+  display: none;
+}
+
+.topnavh a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnavh a.icon {
+  background:red;
+  display: block;
+  position: absolute;margin-top: 15px;
+}
+
+.topnavh a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
 #skillhero{
     display: flex;
-    gap: 25%;
+    gap: 20%;
     margin: 40px;
   }
-.topnav {
-  padding-top: 25px;
-    display: inline-flex;
-    gap: 40px;
-    white-space: nowrap;
+.topnav { 
+    padding-top: 25px; 
+       display: inline-flex; 
+       gap: 40px; 
+       white-space: nowrap; 
     
-    }
+     } 
     #active{
       color: red;
     }
@@ -23,12 +52,14 @@
       margin-top: 3px;
     }
     .input{
+      font-size: x-small;
       border-radius: 20px;
       height: 40px;
       width: 70%;
     }
     #wholepage{
       margin-left: 10%;
+      margin-right: 10%;
     }
     #get{
 
@@ -73,7 +104,7 @@
     #logos{
       width: 10%;
       height: 10%;
-      text-align: center;
+      justify-items: center;
     }
     #buttons{
       display: flex;
@@ -85,14 +116,15 @@
       margin-right: -52%;
     }
     #explore{
+      font-size: x-small;
       border-radius: 20px;
       background-color: red;
       color: white;
       height: 44px;
+      width: 120px;
     }
     #man{
-      width: 100%;
-      padding-top: 12px;
+      width: 200%;
     }
     #upgrade{
       font-size: 60px;
@@ -101,43 +133,84 @@
 
     @media screen and (min-width: 375px) and (max-width: 667px){
       #skillhero{
-        display: flex;
-flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
+  margin: 0%;
+            }
+      
+      #wholepage{
+        margin: 0%;
       }
-
-    .topnav {
-        display:flex;
-        flex-wrap: wrap;
-        
-        }
-
-        .content{
-            display: flex;
-flex-wrap: wrap;
-        }
-
-        #footer{
-          display: flex;
-flex-wrap: wrap;
-        }
-
-        #tick{
-          display: flex;
-          flex-wrap: wrap;
-        } 
-        #log{
-          border-radius: 12px;
-          border-color: red;
-          background-color: white;
-          color: red;
-          width: 30%;
-          height: 20%;
-        }
-        #join{
-          border-radius: 12px;
-          background-color: red;
-          color: white;
-          width: 40%;
-          height: 20%;
-        }
-    }
+      
+      #join{
+        font-size: xx-small;
+        width: 20%;
+      }
+      
+      #upgrade{
+      font-size: 30px;
+      font-style:initial;
+      }
+      
+      .topnav {
+      display: flex;
+       flex-wrap: wrap;
+              }
+              
+      #hat{
+        font-size: x-small;
+      }
+              .content{
+                  display: flex;
+      flex-wrap: wrap;
+              }
+              #paragraph{
+                font-size: xx-small;
+              }
+      
+              #footer{
+                display: flex;
+      flex-wrap: wrap;
+              }
+              #logo{
+                display:flex;
+                gap: 22%;
+                width: 60%;
+                justify-content: center;
+      
+              }
+      
+              #ticks{
+                width: 12px;
+                height: 12px;
+              }
+      
+              #tick{
+                font-size: xx-small;
+                display: flex;
+                flex-wrap: wrap;
+              } 
+              #log{
+      font-size: x-small;
+                width: 90px;
+                height: 20px;
+              }
+              #join{
+      font-size: x-small;
+                width: 90px;
+                height: 20px;
+              }
+              #explore{
+      font-size: xx-smaller;
+      width: 80%;
+                height: 34px;
+              }
+.input{
+font-size: xx-smaller;
+height: 30px; }
+      
+              #man{
+                width: 60%;
+                padding-top: 12px;
+              }
+          }

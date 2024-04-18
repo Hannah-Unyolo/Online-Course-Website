@@ -13,15 +13,37 @@
                 <img src="Images/wisdomhat.png"><h2>SKILL<b id="active">HERO</b></h2>
             </div>
 
+
             <div class="topnav">
-                <a id="active">Home</a>
-                <a>Programs</a>
-                <a>About Us</a>
-                <a>Contact</a>
-                <button id="log">Login</button>
-                <button id="join">Join Now</button>
-                </div>
-    
+             <a id="active">Home</a> 
+             <a>Programs</a>
+            <a>About Us</a>
+            <a>Contact</a>
+            <button id="log">Login</button> 
+             <button id="join">Join Now</button> 
+            </div> 
+    <div class="topnavh">
+        <div id="myLinks">
+            <a href="#home" id="active">Home</a>
+          <a href="#programs">Programs</a>
+          <a href="#about">AboutUs</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
         </div> 
 
         <div class="content">
@@ -30,7 +52,7 @@
                 Skills Up To <br>
             <b id="active">Superhero</b> Level</h1>
             <br>
-            <p>Don't let your strength be defeated,<br>
+            <p id="paragraph">Don't let your strength be defeated,<br>
             Explore the hidden skills within you !</p>
             <br>
             <br>
@@ -46,12 +68,13 @@
 <br>
 <div id="tick">
     <img src="Images/tick.png" id="ticks"> <p>Monthly Subscription</p>
+     <br>
     <img src="Images/tick.png" id="ticks"> <p>30 day money back guarantee</p>
 </div>
             </div>
             <br>
             <div>
-<img src="Images/aman.png" width="200%">
+<img src="Images/aman.png" id="man">
             </div>
     </div>
 </div>
