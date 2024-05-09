@@ -7,23 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="wholepage">
+    <div id="body">
         <div id="skillhero">
-            <div id="hat">
+            <div id="logo-hat">
                 <img src="Images/wisdomhat.png"><h2>SKILL<b id="active">HERO</b></h2>
             </div>
-
 
             <div class="topnav">
              <a id="active">Home</a> 
              <a>Programs</a>
             <a>About Us</a>
             <a>Contact</a>
-            <button id="log">Login</button> 
-             <button id="join">Join Now</button> 
+            <button id="login-button">Login</button> 
+             <button id="join-button">Join Now</button> 
             </div> 
-    <div class="topnavh">
-        <div id="myLinks">
+    <div class="menu">
+        <div id="itemLinks">
             <a href="#home" id="active">Home</a>
           <a href="#programs">Programs</a>
           <a href="#about">AboutUs</a>
@@ -33,61 +32,53 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
-      
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-      </script>
         </div> 
 
-        <div class="content">
+        <div class="landingpage">
             <div>
             <h1 id="upgrade">Upgrade Your <br>
                 Skills Up To <br>
             <b id="active">Superhero</b> Level</h1>
-            <br>
             <p id="paragraph">Don't let your strength be defeated,<br>
             Explore the hidden skills within you !</p>
-            <br>
-            <br>
             <div id="buttons">
                 <div class="button">
                     <input name="text" type="text" placeholder="What skills are you looking for" class="input"/> 
                 </div>
                 <div>
-                    <button id="explore">Explore Now</button> 
+                    <button id="explore-button">Explore Now</button> 
                 </div>
             </div>
 <br>
-<br>
-<div id="tick">
+<div id="paragraph">
     <img src="Images/tick.png" id="ticks"> <p>Monthly Subscription</p>
      <br>
     <img src="Images/tick.png" id="ticks"> <p>30 day money back guarantee</p>
 </div>
             </div>
-            <br>
             <div>
 <img src="Images/aman.png" id="man">
             </div>
     </div>
 </div>
-<br>
-<br>
-
-    <div id="logo">
-        <img src="Images/black microsoft.png" id="logos">
-        <img src="Images/blackgoogle.png" id="logos">
-        <img src="Images/bmedium.png" id="logos">
-        <img src="Images/udemyy.png" id="logos">
-        <img src="Images/blackslack.jpeg" id="logos">
+    <div id="logos">
+        <img src="Images/black microsoft.png" id="logo">
+        <img src="Images/blackgoogle.png" id="logo">
+        <img src="Images/bmedium.png" id="logo">
+        <img src="Images/udemyy.png" id="logo">
+        <img src="Images/blackslack.jpeg" id="logo">
     </div>
+
+    <script>
+        function myFunction() {
+          const navItems = document.getElementById("itemLinks");
+          if (navItems.style.display === "block") {
+            navItems.style.display = "none";
+          } else {
+            navItems.style.display = "block";
+          }
+        }
+        </script>
 
 </body>
 </html>

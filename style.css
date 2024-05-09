@@ -4,24 +4,24 @@
   position: relative;
 }
 
-.topnavh #myLinks {
+.menu #itemLinks {
   display: none;
 }
 
-.topnavh a {
+.menu a {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
 }
 
-.topnavh a.icon {
+.menu a.icon {
   background:red;
   display: block;
   position: absolute;margin-top: 15px;
 }
 
-.topnavh a:hover {
+.menu a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -42,14 +42,15 @@
     #active{
       color: red;
     }
-    .content{
+    .landingpage{
         display: flex;
         padding-left: 3%;
-        gap: 1%;
+        gap: 3%;
     }
-    #hat{
+    #logo-hat{
       display: flex;
       margin-top: 3px;
+      object-fit: none;
     }
     .input{
       font-size: x-small;
@@ -57,9 +58,10 @@
       height: 40px;
       width: 70%;
     }
-    #wholepage{
-      margin-left: 10%;
-      margin-right: 10%;
+    #body{
+      margin-left: 5%;
+      margin-right: 5%;
+      
     }
     #get{
 
@@ -67,7 +69,7 @@
       background-color: red;
       color: white;
     }
-    #log{
+    #login-button{
       border-radius: 12px;
       border-color: red;
       background-color: white;
@@ -75,25 +77,27 @@
       width: 30%;
       height: 40%;
     }
-    #join{
+    #join-button{
       border-radius: 20px;
       background-color: red;
       color: white;
       width: 40%;
       height: 40%;
     }
-    #logo{
+    #logos{
       width: 95%;
       display: flex;
       gap: 10%;
       background-color: white;
       padding-left: 4%;
+      padding-bottom: 20%;
     
     }
-    #tick{
+    #paragraph{
       display: flex;
       gap:2%;
       white-space: nowrap;
+
     }
 
     #ticks{
@@ -101,7 +105,7 @@
       height: 40px;
     }
 
-    #logos{
+    #logo{
       width: 10%;
       height: 10%;
       justify-items: center;
@@ -115,7 +119,7 @@
       height: 80px;
       margin-right: -52%;
     }
-    #explore{
+    #explore-button{
       font-size: x-small;
       border-radius: 20px;
       background-color: red;
@@ -124,11 +128,12 @@
       width: 120px;
     }
     #man{
-      width: 200%;
+      width: 170%;
     }
     #upgrade{
       font-size: 60px;
       font-style:initial;
+      color: rgb(21, 21, 92);
     }
 
     @media screen and (min-width: 375px) and (max-width: 667px){
@@ -138,11 +143,11 @@
   margin: 0%;
             }
       
-      #wholepage{
+      #body{
         margin: 0%;
       }
       
-      #join{
+      #join-button{
         font-size: xx-small;
         width: 20%;
       }
@@ -157,10 +162,10 @@
        flex-wrap: wrap;
               }
               
-      #hat{
+      #logo-hat{
         font-size: x-small;
       }
-              .content{
+              .landingpage{
                   display: flex;
       flex-wrap: wrap;
               }
@@ -172,7 +177,7 @@
                 display: flex;
       flex-wrap: wrap;
               }
-              #logo{
+              #logos{
                 display:flex;
                 gap: 22%;
                 width: 60%;
@@ -185,22 +190,22 @@
                 height: 12px;
               }
       
-              #tick{
+              #paragraph{
                 font-size: xx-small;
                 display: flex;
                 flex-wrap: wrap;
               } 
-              #log{
+              #login-button{
       font-size: x-small;
                 width: 90px;
                 height: 20px;
               }
-              #join{
+              #join-button{
       font-size: x-small;
                 width: 90px;
                 height: 20px;
               }
-              #explore{
+              #explore-button{
       font-size: xx-smaller;
       width: 80%;
                 height: 34px;
@@ -208,9 +213,93 @@
 .input{
 font-size: xx-smaller;
 height: 30px; }
-      
-              #man{
-                width: 60%;
-                padding-top: 12px;
-              }
+  
+#man{
+ width: 60%;
+padding-top: 12px;
+}
+}
+
+/* @media screen and (min-width: 667px) and (max-width: 1200px){
+  #skillhero{
+  display: flex;
+  flex-wrap: wrap;
+margin: 0%;
+        }
+  
+  #wholepage{
+    margin: 0%;
+  }
+  
+  #join{
+    font-size: xx-small;
+    width: 20%;
+  }
+  
+  #upgrade{
+  font-size: 30px;
+  font-style:initial;
+  }
+  
+  .topnav {
+  display: flex;
+   flex-wrap: wrap;
           }
+          
+  #hat{
+    font-size: x-small;
+  }
+          .content{
+              display: flex;
+  flex-wrap: wrap;
+          }
+          #paragraph{
+            font-size: xx-small;
+          }
+  
+          #footer{
+            display: flex;
+  flex-wrap: wrap;
+          }
+          #logo{
+            display:flex;
+            gap: 22%;
+            width: 60%;
+            justify-content: center;
+  
+          }
+  
+          #ticks{
+            width: 12px;
+            height: 12px;
+          }
+  
+          #tick{
+            font-size: xx-small;
+            display: flex;
+            flex-wrap: wrap;
+          } 
+          #log{
+  font-size: x-small;
+            width: 90px;
+            height: 20px;
+          }
+          #join{
+  font-size: x-small;
+            width: 90px;
+            height: 20px;
+          }
+          #explore{
+  font-size: xx-smaller;
+  width: 80%;
+            height: 34px;
+          }
+.input{
+font-size: xx-smaller;
+height: 30px; }
+
+#man{
+width: 60%;
+padding-top: 12px;
+}
+} */
